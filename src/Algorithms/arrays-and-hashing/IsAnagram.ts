@@ -16,9 +16,8 @@ function isAnagram(s: string, t: string): boolean {
       } else {
         anagramMap.set(char, anagramMap.get(char)! - 1);
       }
-    }
-    else {
-        return false
+    } else {
+      return false;
     }
   }
 
@@ -27,3 +26,23 @@ function isAnagram(s: string, t: string): boolean {
   }
   return true;
 }
+
+// solution 2:
+
+// function isAnagram(s: string, t: string): boolean {
+
+//   if (s.length !== t.length) {
+//     return false;
+//   }
+
+//   const sArray = s.split('');
+//   const tArray = t.split('');
+
+//   sArray.sort();
+//   tArray.sort();
+
+//   const sSorted = sArray.join('');
+//   const tSorted = tArray.join('');
+
+//   return sSorted === tSorted;
+// }
