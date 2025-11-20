@@ -27,3 +27,5 @@ function productExceptSelf(nums: number[]): number[] {
 console.log(productExceptSelf([1, 2, 3, 4])); // [24, 12, 8, 6]
 console.log(productExceptSelf([1, 2, 0, 4])); // [0, 0, 8, 0]
 console.log(productExceptSelf([0, 0, 3, 4])); // [0, 0, 0, 0]
+
+// Array = [1, 1, 8, 6]
